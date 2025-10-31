@@ -8,7 +8,7 @@ class ButtonMeApp(QWidget):
 
         layout = QVBoxLayout()
         for function in range(functions):
-            layout.addWidget
+            layout.addWidget(FunctionButton(function))
 
 
 class FunctionButton(QPushButton):
