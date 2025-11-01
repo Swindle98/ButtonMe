@@ -1,7 +1,11 @@
 import importlib
-from ButtonMe import buttonize
+from ButtonMe import main
 import pytest
 
+def _reload_main():
+    importlib.reload(main)
+    from ButtonMe.main import buttonize  # ensure function binding comes from the reloaded module
+    return buttonize
 
 def test_buttonize_registers_and_returns_function():
     buttonize = _reload_main()

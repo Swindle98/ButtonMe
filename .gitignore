@@ -217,3 +217,5 @@ __marimo__/
 
 *.pyc
 .pyc
+ButtonMe/__pycache__/__init__.cpython-313.pyc
+ButtonMe/__pycache__/main.cpython-313.pyc
